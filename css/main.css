@@ -211,6 +211,101 @@ button, .faq-question {
   max-height: max-content;
 }
 
+/* COMPONENT: POP-UP */
+
+.esim-popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 44, 44, 0.56);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.esim-popup {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(24, 24, 24, 0.22);
+  max-width: 840px;
+  padding: 50px;
+  font-size: 16px;
+  color: var(--black);
+}
+.esim-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 3;
+  border-radius: 50%;
+  transition: background 0.16s;
+}
+.esim-popup__close:hover {
+  background: var(--light-gray);
+}
+.esim-popup__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.esim-popup__list {
+  margin-bottom: 16px;
+  padding-left: 18px;
+  font-size: 16px;
+}
+.esim-popup__list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.esim-popup__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.esim-popup__checkbox input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  margin-top: 3px; 
+  box-sizing: border-box;
+}
+.esim-popup__checkbox a {
+  color: var(--red);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.esim-popup__btn.disabled {
+  background: #d6d6d6;
+  color: #fff;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.esim-popup__btn {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 13px 32px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 10px rgba(24, 24, 24, 0.07);
+}
+.esim-popup__btn:hover {
+  transform: scale(0.9);
+}
+
 /* MEDIA SCREENS */
 @media (max-width: 1024px) {
   .container {
@@ -227,6 +322,11 @@ button, .faq-question {
   }
   h2 {
     font-size: 32px;
+  }
+  .esim-popup {
+    padding: 20px;
+    max-width: 95vw;
+    font-size: 15px;
   }
 }
 @media (max-width: 768px) {

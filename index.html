@@ -366,6 +366,37 @@
 
     <script src="./js/script.js"></script>
 
+    <div class="esim-popup-overlay" id="esim-popup-overlay">
+      <div class="esim-popup" id="esim-popup">
+        <button class="esim-popup__close" id="esim-popup-close" aria-label="Закрыть">
+          <svg aria-hidden="true" width="28" height="28"><use href="#icon-cross-popup" xlink:href="#icon-cross-popup" /></svg>
+        </button>
+        <div class="esim-popup__content">
+          <h3 class="esim-popup__title">Важно!</h3>
+          <ul class="esim-popup__list">
+            <li>Подключение абонентского номера доступно только на eSIM – убедитесь, что Ваш смартфон поддерживает данную технологию.</li>
+            <li>Оформление заявки на подключение не доступно с мобильных устройств.</li>
+            <li>Выбранный номер может быть ранее использованным.</li>
+            <li>Подключение номера доступно пользователям, зарегистрированным в системе МУИД.</li>
+            <li>Подключение eSIM через сайт недоступно, если на одни и те же паспортные данные зарегистрированы 5 и более номеров.</li>
+          </ul>
+          <label class="esim-popup__checkbox">
+            <input type="checkbox" id="checkbox1">
+            <span>
+              Я ознакомлен(а) с <a href="#conditions" class="close-popup-on-anchor">правилами подключения eSIM</a> и подтверждаю, что моё устройство поддерживает данную технологию
+            </span>
+          </label>
+          <label class="esim-popup__checkbox">
+            <input type="checkbox" id="checkbox2">
+            <span>
+              Я ознакомлен(а) с <a href="https://mobi.uz/upload/files/Oferta_RU6.23.pdf">публичной офертой</a> и согласен(на) на сбор, хранение и обработку персональных данных
+            </span>
+          </label>
+          <a href="https://mobi.uz/ru/" class="esim-popup__btn disabled" id="esim-popup-btn" aria-label="Mobiuz страница подключения eSIM">Подключиться</a>
+        </div>
+      </div>
+    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <!-- Иконка стрелочки для хлебных крошек-->
       <symbol id="icon-arrow" viewBox="0 0 5 9">
@@ -386,6 +417,14 @@
           <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
         </svg>
       </symbol>
+      <!-- Иконка закрытия окна -->
+      <symbol id="icon-cross-popup" viewBox="0 0 24 24">
+        <svg width="28" height="28" viewBox="0 0 28 28">
+          <line x1="7" y1="7" x2="21" y2="21" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="7" x2="7" y2="21" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </symbol>
+    </svg>
     </svg>
 
   <footer>FOOTER</footer>
