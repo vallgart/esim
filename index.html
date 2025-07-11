@@ -40,7 +40,7 @@
             </nav>
 
             <section class="first-screen">
-                <div class="hero-content">
+                <div id="hero-content" class="hero-content">
                     <h1>Бесплатное онлайн подключение eSIM</h1>
                     <p>Подключитесь к Mobiuz онлайн не выходя из дома</p>
                     <button class="btn-esim">Подключить eSIM</button>
@@ -49,7 +49,7 @@
                 <p>eSIM – это встроенный в смартфон абонентский модуль, с помощью которого обеспечивается идентификация абонента и доступ его оконечного абонентского устройства (далее «Устройство») к сети сотовой подвижной связи Mobiuz.</p>
             </section>
 
-            <section class="how-to-connect-esim--section">
+            <section class="how-to-connect-esim--section" id="conditions">
                 <h2>Как подключить eSIM?</h2>
 
                 <div class="tabs-container">
@@ -159,58 +159,18 @@
 
             </section>
 
-            <section class="esim-support">
+            <section id="esim-support" class="esim-support">
                 <h2>Устройства с поддержкой eSIM</h2>
 
                 <div class="tabs-container">
                   <div class="tablist" role="tablist">
-                      <button class="tablist-item tablist-item--active">Apple</button>
+                      <button class="tablist-item tablist-item--active">Xiaomi</button>
                       <button class="tablist-item">Samsung</button>
-                      <button class="tablist-item">Xiaomi</button>
-                      <button class="tablist-item">Huawei</button>
+                      <button class="tablist-item">Apple</button>
                       <button class="tablist-item">Honor</button>
+                      <button class="tablist-item">Huawei</button>
                   </div>
-
                   <div role="tabpanel" class="tab-content active">
-                    <div class="paragraphs">
-                        <ul>
-                            <li><b>iPhone</b> 11/12/13/14/15/16/XR/XS</li>
-                            <li><b>iPhone</b> 16e</li>
-                            <li><b>iPhone</b> SE 2020/2022</li>
-                            <li><b>iPhone</b> 14/15/16 Plus</li>
-                            <li><b>iPhone</b> 11/12/13/14/15/16 Pro</li>
-                            <li><b>iPhone</b> 11/12/13/14/15/16 Pro Max</li>
-                            <li><b>iPhone</b> XS Max</li>
-                            <li><b>iPhone</b> 12/13 mini</li>
-                        </ul>
-                    </div>
-                    <button class="btn-esim">Подключить eSIM</button>
-                </div>
-                <div role="tabpanel" class="tab-content">
-                    <div class="paragraphs">
-                      <ul>
-                          <li><b>Galaxy</b> S25 / S25+ / S25 Ultra</li>
-                          <li><b>Galaxy</b> S24 / S24+ / S24 Ultra</li>
-                          <li><b>Galaxy</b> S23 / S23+ / S23 Ultra</li>
-                          <li><b>Galaxy</b> S22 / S22+ / S22 Ultra</li>
-                          <li><b>Galaxy</b> S21 / S21+ / S21 Ultra</li>
-                          <li><b>Galaxy</b> S20 / S20+ / S20 Ultra</li>
-                          <li><b>Galaxy Z</b> Fold6 / Flip6</li>
-                          <li><b>Galaxy Z</b> Fold5 / Flip5</li>
-                          <li><b>Galaxy Z</b> Fold4 / Flip4</li>
-                          <li><b>Galaxy Z</b> Fold3 / Flip3</li>
-                          <li><b>Galaxy Z</b> Fold2</li>
-                          <li><b>Galaxy Z</b> Flip 5G / Flip</li>
-                          <li><b>Galaxy</b> S23 FE</li>
-                          <li><b>Galaxy</b> A54 (Европа, США, Корея, Япония)</li>
-                          <li><b>Galaxy</b> A55 (все регионы)</li>
-                          <li><b>Galaxy</b> A35 (Европа, США, Корея)</li>
-                          <li><b>Galaxy</b> XCover 7 (все регионы)</li>
-                      </ul>
-                    </div>
-                    <button class="btn-esim">Подключить eSIM</button>
-                </div>
-                <div role="tabpanel" class="tab-content">
                     <div class="paragraphs">
                       <ul>
                           <li><b>Xiaomi</b> 15 Ultra</li>
@@ -238,10 +198,39 @@
                 <div role="tabpanel" class="tab-content">
                     <div class="paragraphs">
                       <ul>
-                          <li><b>Huawei</b> P40</li>
-                          <li><b>Huawei</b> P40 Pro</li>
-                          <li><b>Huawei</b> Mate 40 Pro</li>
+                          <li><b>Galaxy</b> S25 / S25+ / S25 Ultra</li>
+                          <li><b>Galaxy</b> S24 / S24+ / S24 Ultra</li>
+                          <li><b>Galaxy</b> S23 / S23+ / S23 Ultra</li>
+                          <li><b>Galaxy</b> S22 / S22+ / S22 Ultra</li>
+                          <li><b>Galaxy</b> S21 / S21+ / S21 Ultra</li>
+                          <li><b>Galaxy</b> S20 / S20+ / S20 Ultra</li>
+                          <li><b>Galaxy Z</b> Fold6 / Flip6</li>
+                          <li><b>Galaxy Z</b> Fold5 / Flip5</li>
+                          <li><b>Galaxy Z</b> Fold4 / Flip4</li>
+                          <li><b>Galaxy Z</b> Fold3 / Flip3</li>
+                          <li><b>Galaxy Z</b> Fold2</li>
+                          <li><b>Galaxy Z</b> Flip 5G / Flip</li>
+                          <li><b>Galaxy</b> S23 FE</li>
+                          <li><b>Galaxy</b> A54 (Европа, США, Корея, Япония)</li>
+                          <li><b>Galaxy</b> A55 (все регионы)</li>
+                          <li><b>Galaxy</b> A35 (Европа, США, Корея)</li>
+                          <li><b>Galaxy</b> XCover 7 (все регионы)</li>
                       </ul>
+                    </div>
+                    <button class="btn-esim">Подключить eSIM</button>
+                </div>
+                  <div role="tabpanel" class="tab-content">
+                    <div class="paragraphs">
+                        <ul>
+                            <li><b>iPhone</b> 11/12/13/14/15/16/XR/XS</li>
+                            <li><b>iPhone</b> 16e</li>
+                            <li><b>iPhone</b> SE 2020/2022</li>
+                            <li><b>iPhone</b> 14/15/16 Plus</li>
+                            <li><b>iPhone</b> 11/12/13/14/15/16 Pro</li>
+                            <li><b>iPhone</b> 11/12/13/14/15/16 Pro Max</li>
+                            <li><b>iPhone</b> XS Max</li>
+                            <li><b>iPhone</b> 12/13 mini</li>
+                        </ul>
                     </div>
                     <button class="btn-esim">Подключить eSIM</button>
                 </div>
@@ -265,7 +254,17 @@
                     </div>
                     <button class="btn-esim">Подключить eSIM</button>
                 </div>
+                <div role="tabpanel" class="tab-content">
+                    <div class="paragraphs">
+                      <ul>
+                          <li><b>Huawei</b> P40</li>
+                          <li><b>Huawei</b> P40 Pro</li>
+                          <li><b>Huawei</b> Mate 40 Pro</li>
+                      </ul>
+                    </div>
+                    <button class="btn-esim">Подключить eSIM</button>
                 </div>
+              </div>
             </section>
 
             <section class="other-services">
@@ -287,76 +286,121 @@
                 </div>
             </section>
 
-            <section class="faq-section sections">
+            <section class="faq-section">
               <h2>Вопросы и ответы (FAQ)</h2>
               <div class="faq-row">
                 <div class="faq-col">
                   <!-- Левая колонка -->
                   <div class="faq-item">
                     <button class="faq-question">
-                      Что такое профиль eSIM?
+                      Что такое профиль eSIM и в чем разница от обычной SIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">Профиль eSIM – это настройки тарифа для номера, загружаемые через QR-код.</div>
+                    <div class="faq-answer">
+                      <p>Профиль eSIM – это настройки тарифа для номера, загружаемые через QR-код. eSIM нельзя извлечь, сломать или потерять, она встроена в смартфон.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Можно ли установить один и тот же eSIM профиль на несколько устройств?
+                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Загрузка профиля по QR-коду единоразовая с привязкой к одному устройству. При смене устройства нужно удалять старый профиль и заново обращаться в офис.</p>
+                    </div>
                   </div>
                   <div class="faq-item">
                     <button class="faq-question">
                       Сколько номеров можно подключить на eSIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">На одно устройство можно подключить до 5 номеров (профилей) на eSIM. Количество профилей на eSIM зависит от модели устройства (проверьте характеристики или ознакомьтесь на официальном сайте производителя).</div>
+                    <div class="faq-answer">
+                      <p>На одном устройстве можно хранить до 5 профилей eSIM, между которыми легко переключаться в настройках.</p>
+                    </div>
                   </div>
                   <div class="faq-item">
                     <button class="faq-question">
-                      В чём отличие eSIM от обычной SIM-карты?
+                      Как проверить IMEI-код от мобильного устройства?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">eSIM нельзя извлечь, сломать или потерять, так как она встроена в смартфон. На одну eSIM можно установить до 5 номеров (профилей). В любой момент, через настройки в смартфоне можно выбрать, какой из 5 номеров будет активным.</div>
+                    <div class="faq-answer">
+                      <p>На сайте <a href="uzimei.uz">uzimei.uz</a>, через USSD-запрос <a href="tel:*1170#"></a> или SMS на номер 1170.</p>
+                    </div>
                   </div>
                   <div class="faq-item">
                     <button class="faq-question">
-                      Нужно ли регистрировать IMEI-код при подключении eSIM?
+                      Как зарегистрировать IMEI-код на eSIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">Да. Перед подключением, нужно проверить статус IMEI-кода мобильного устройства. Узнать подробнее можно  <a href="https://mobi.uz/ru/support/imei/">здесь</a></div>
+                    <div class="faq-answer">
+                      <p>На сайтах <a href="uzimei.uz">uzimei.uz</a> и <a href="my.gov.uz">my.gov.uz</a>, с помощью SMS и USSD запроса <a href="tel:*1170#">*1170#</a>, в пунктах почтовой связи.</p>
+                    </div>
                   </div>
-
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Нужна ли физическая SIM карта и интернет для работы eSIM?
+                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                      <p>eSIM полностью заменяет SIM-карту и работает без нее. Интернет необходим только во время активации или деактивации еSIM.</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="faq-col">
                   <!-- Правая колонка -->
                   <div class="faq-item">
                     <button class="faq-question">
-                      Какие тарифы от Mobiuz можно подключить на eSIM?
-                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
-                    </button>
-                    <div class="faq-answer">Возможно подключение на все действующие тарифные планы.</div>
-                  </div>
-                  <div class="faq-item">
-                    <button class="faq-question">
-                      Можно ли одновременно пользоваться eSIM и SIM-картой?
+                      Поддерживает ли мое устройство eSIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
                     <div class="faq-answer">
-                      <p>Да. Можно выбрать с какой SIM-карты звонить, отправлять сообщения и пользоваться интернетом. </p>
-                      <br>
-                      <p>На iPhone можно пользоваться двумя SIM-картами одновременно. Активными могут быть сразу два тарифа. Основной ― на физической SIM-карте, дополнительный ― на eSIM.</p>
-                      <br>
-                      <p>На Samsung можно пользоваться двумя SIM-картами одновременно. Активными могут быть сразу два тарифа. Основной ― на физической SIM-карте (если лоток для SIM-карт заполнен двумя SIM-картами, то нужно выбрать активную SIM-карту, вторая будет неактивной), дополнительный ― на eSIM.</p>
+                      Посмотрите в характеристиках телефона, на сайте производителя или в <a href="#esim-support">списке поддерживаемых моделей</a>.
                     </div>
                   </div>
                   <div class="faq-item">
                     <button class="faq-question">
-                      Работает ли eSIM в роуминге?
+                       Переносятся ли автоматически контакты, которые хранились на SIM-карте при переходе на eSIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">eSIM в роуминге работает также, как и обычная SIM-карта. Роуминг предоставляется согласно тарифам на услуги международного роуминга. Подробнее можно узнать <a href="https://mobi.uz/ru/roaming/before_trip/">на этой странице</a></div>
+                    <div class="faq-answer">
+                      <p>Нет. Нужно заранее сохранить контакты, которые хранятся на SIM-карте на устройство.</p>
+                    </div>
                   </div>
                   <div class="faq-item">
                     <button class="faq-question">
-                      Можно ли заменить SIM-карту на eSIM и наоборот?
+                      Можно ли текущий номер на SIM-карте перенести на eSIM?
                       <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
                     </button>
-                    <div class="faq-answer">Да. Для этого необходимо обратиться в офис Mobiuz с документом, удостоверяющим личность.</div>
+                    <div class="faq-answer">
+                      <p>Да. Для этого необходимо обратиться в офис Mobiuz с документом, удостоверяющим личность ил подать заявку на сайте Mobiuz: <a href="https://mobi.uz/ru/uslugi/online/replacement-sim/">онлайн замена SIM на eSIM</a></p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Сохранится ли мой тариф после перехода с SIM-карты на eSIM?
+                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Да. Все тарифы и услуги по вашему номеру остаются.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Что делать, если я по ошибке удалил свой профиль eSIM?
+                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Обратитесь в офис Mobiuz с документом, удостоверяющим личность или подайте заявку на сайте Mobiuz: <a href="#hero-content">онлайн подключение eSIM</a>. Стоимость замены eSIM - 30 000 сум.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Как заблокировать eSIM, если телефон утерян? 
+                      <svg class="arrow" aria-hidden="true" width="24" height="24"><use href="#icon-arrow-faq" xlink:href="#icon-arrow-faq" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Позвоните на <a href="tel:+998971300909">(+998) 97 130 09 09</a>, <a href="tel:0890">0890</a> или обратитесь в офис Mobiuz с документом, удостоверяющим личность.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -389,7 +433,7 @@
           <label class="esim-popup__checkbox">
             <input type="checkbox" id="checkbox2">
             <span>
-              Я ознакомлен(а) с <a href="https://mobi.uz/upload/files/Oferta_RU6.23.pdf">публичной офертой</a> и согласен(на) на сбор, хранение и обработку персональных данных
+              Я ознакомлен(а) с <a target="_blank" href="https://mobi.uz/upload/files/Oferta_RU6.23.pdf">публичной офертой</a> и согласен(на) на сбор, хранение и обработку персональных данных
             </span>
           </label>
           <a href="https://esim.mobi.uz/EsimRemoteSaleUI/?" class="esim-popup__btn disabled" id="esim-popup-btn" aria-label="Mobiuz страница подключения eSIM">Подключиться</a>

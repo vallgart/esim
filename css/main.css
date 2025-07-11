@@ -158,12 +158,14 @@ section {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 18px;
+  gap: 20px;
 }
 .faq-item.active .arrow {
   transform: rotate(180deg);
 }
 .arrow {
+  flex-shrink: 0;
+  align-self: flex-start;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -180,7 +182,6 @@ section {
 .faq-question {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 12px;
   width: 100%;
   padding: 20px;
@@ -212,7 +213,6 @@ button, .faq-question {
 }
 
 /* COMPONENT: POP-UP */
-
 .esim-popup-overlay {
   display: none;
   position: fixed;
@@ -306,7 +306,7 @@ button, .faq-question {
   transform: scale(0.9);
 }
 
-/* MEDIA SCREENS */
+/* MEDIA QUERIES */
 @media (max-width: 1024px) {
   .container {
     padding: 40px 20px;
@@ -334,6 +334,9 @@ button, .faq-question {
     background-position: 70% 40%;
     padding: 107px 20px;
   }
+  .faq-question {
+    font-size: 16px;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -343,15 +346,27 @@ button, .faq-question {
     background-position: 75% 40%;
     padding: 106px 18px;
   }
+  nav {
+    font-size: 16px;
+  }
   h1, h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   h3 {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+  .tablist-item {
+    font-size: 18px;
+  }
+  .tab-content {
+    padding: 15px;
   }
   .hero-content p {
-    font-size: 16px;
     max-width: 239px;
+    font-size: 16px;
   }
   .btn-esim {
     font-size: 16px;
